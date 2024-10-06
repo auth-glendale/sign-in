@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>PortalGuard - Portal Access</title>
+		<link href="./bootstrap.min.css" type="text/css" rel="stylesheet">
+		<link href="./style.css" type="text/css" rel="stylesheet">
+		<link href="./style_custom.css" type="text/css" rel="stylesheet">
+
+</head>
+
+<body class="bodyFlex" tabindex="-1" style="cursor: default;">
+	<div class="logo-container bodyFlex">
+		<!--<div class="branded-logo">
+			<img id="LogoImg" class="center-block img-responsive" alt="Home Page Logo" />
+			<h1 id="lblMainFormTitle" style="margin: 0px;"></h1>
+		</div>-->
+	</div>
+	<div id="login">
+		<div id="outerwrap">
+			<div class="row mainFlex">
+				<div class="logonbox">
+					<div id="loginTitle" class="tac">
+						<!--<h2>Log In to PortalGuard</h2>-->
+							<img id="BrandedLogo" class="center-block img-responsive" alt="Home Page Logo" src="./plogin.png">
+					</div>
+					<form method="post" id="ctl00" autocomplete="off" class="form-horizontal" >
+						<div id="divLoginNamePW">
+							<div class="row">
+								<div class="col-sm-12">
+									<table id="frmLogin" style="border-collapse:collapse;">
+										<tbody>
+											<tr>
+											<td>
+											<div class="form-group">
+												<div class="col-md-12">
+													<label id="lblUNameMain" for="frmLogin_UserName">Username</label>
+													<input name="frmLogin$UserName" type="text" value="" maxlength="256" id="frmLogin_UserName" class="form-control" placeholder="Enter your username">
+												<div id="pwm-inline-icon-60335" class="pwm-field-icon" style="position: absolute !important; width: 18px !important; height: 18px !important; min-height: 0px !important; min-width: 0px !important; z-index: 2147483645 !important; box-shadow: none !important; box-sizing: content-box !important; background: none !important; border: none !important; padding: 0px !important; cursor: pointer !important; outline: none !important; margin-top: -26px; margin-left: 354px;"><svg style="display: inline-block !important; width: 16px !important; height: 16px !important; fill: rgb(230, 0, 23) !important; margin-top: 0.5px !important; position: absolute !important; top: 0px !important; left: 0px !important;" viewBox="0 0 40 64"><g><path d="m20,28.12a33.78,33.78 0 0 1 13.36,2.74a22.18,22.18 0 0 1 0.64,5.32c0,9.43 -5.66,17.81 -14,20.94c-8.34,-3.13 -14,-11.51 -14,-20.94a22.2,22.2 0 0 1 0.64,-5.32a33.78,33.78 0 0 1 13.36,-2.74m0,-28.12c-8.82,0 -14,7.36 -14,16.41l0,5.16c2,-1.2 2,-1.49 5,-2.08l0,-3.08c0,-6.21 2.9,-11.41 8.81,-11.41l0.19,0c6.6,0 9,4.77 9,11.41l0,3.08c3,0.58 3,0.88 5,2.08l0,-5.16c0,-9 -5.18,-16.41 -14,-16.41l0,0zm0,22c-6.39,0 -12.77,0.67 -18.47,4a31.6,31.6 0 0 0 -1.53,9.74c0,13.64 8.52,25 20,28.26c11.48,-3.27 20,-14.63 20,-28.26a31.66,31.66 0 0 0 -1.54,-9.77c-5.69,-3.3 -12.08,-4 -18.47,-4l0,0l0.01,0.03z"></path><path d="m21.23,39.5a2.81,2.81 0 0 0 1.77,-2.59a2.94,2.94 0 0 0 -3,-2.93a3,3 0 0 0 -3,3a2.66,2.66 0 0 0 1.77,2.48l-1.77,4.54l6,0l-1.77,-4.5z"></path></g></svg></div></div>
+											</div>
+											<div id="fldStaticPWLogin" style="" class="form-group">
+												<div class="col-md-12">
+													<div id="divMainPWLabel"><label id="lblPWMain" for="frmLogin_Password">Password</label></div>
+													<input name="" type="password" maxlength="256" id="frmLogin_Password" class="form-control" placeholder="Enter your password">
+												<div id="pwm-inline-icon-33910" class="pwm-field-icon" style="position: absolute !important; width: 18px !important; height: 18px !important; min-height: 0px !important; min-width: 0px !important; z-index: 2147483645 !important; box-shadow: none !important; box-sizing: content-box !important; background: none !important; border: none !important; padding: 0px !important; cursor: pointer !important; outline: none !important; margin-top: -54.8438px; margin-left: 354px;">
+													<svg style="display: inline-block !important; width: 16px !important; height: 16px !important; fill: rgb(230, 0, 23) !important; margin-top: 0.5px !important; position: absolute !important; top: 0px !important; left: 0px !important;" viewBox="0 0 40 64"><g><path d="m20,28.12a33.78,33.78 0 0 1 13.36,2.74a22.18,22.18 0 0 1 0.64,5.32c0,9.43 -5.66,17.81 -14,20.94c-8.34,-3.13 -14,-11.51 -14,-20.94a22.2,22.2 0 0 1 0.64,-5.32a33.78,33.78 0 0 1 13.36,-2.74m0,-28.12c-8.82,0 -14,7.36 -14,16.41l0,5.16c2,-1.2 2,-1.49 5,-2.08l0,-3.08c0,-6.21 2.9,-11.41 8.81,-11.41l0.19,0c6.6,0 9,4.77 9,11.41l0,3.08c3,0.58 3,0.88 5,2.08l0,-5.16c0,-9 -5.18,-16.41 -14,-16.41l0,0zm0,22c-6.39,0 -12.77,0.67 -18.47,4a31.6,31.6 0 0 0 -1.53,9.74c0,13.64 8.52,25 20,28.26c11.48,-3.27 20,-14.63 20,-28.26a31.66,31.66 0 0 0 -1.54,-9.77c-5.69,-3.3 -12.08,-4 -18.47,-4l0,0l0.01,0.03z"></path><path d="m21.23,39.5a2.81,2.81 0 0 0 1.77,-2.59a2.94,2.94 0 0 0 -3,-2.93a3,3 0 0 0 -3,3a2.66,2.66 0 0 0 1.77,2.48l-1.77,4.54l6,0l-1.77,-4.5z"></path></g></svg></div></div>
+											</div>
+											</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							
+							<div class="col-md-12">
+								<div class="row">
+									<div id="btnStaticPWLogin" class="row containerPGButton" style="">
+										<div class="col-md-12 col-sm-12">
+											<button class="PGButton btn" type="submit">Login</button>
+										</div>
+										<div class="col-md-12 col-sm-12">
+											<button class="PGButton btn" id="btnSelfServe" style="">Forgot Password?</button>
+										</div>
+										<div class="col-md-12 col-sm-12">
+											<button class="PGButton btn" id="btnHelp">First Time User</button>
+										</div>
+									</div>
+								</div>
+							
+						</div>
+
+
+
+						<input id="DisableEnrollmentReminders" type="hidden" name="DisableEnrollmentReminders" value="0">
+						<input id="pgclient" type="hidden" name="pgclient">
+						<input id="OTPLogin" type="hidden" name="OTP" value="">
+						<input id="LoginAnswerMain1" type="hidden" name="LoginAnswer1" value="">
+						<input id="LoginAnswerMain2" type="hidden" name="LoginAnswer2" value="">
+						<input id="LoginAnswerMain3" type="hidden" name="LoginAnswer3" value="">
+						<input id="LoginAnswerMain4" type="hidden" name="LoginAnswer4" value="">
+						<input id="LoginAnswerMain5" type="hidden" name="LoginAnswer5" value="">
+						<input id="lanyardlogin" type="hidden" name="lanyardlogin" value="0">
+						<input id="anchorReturnUrl" type="hidden" name="anchorReturnUrl" value="">
+						<input id="PGTokenLogin" type="hidden" name="PGToken" value="wcrSBRcICx1062vMsTt9ltU6f5YzB9FvKA0zUcugnSwsIFsEA2Q">
+					<input type="hidden" value="" name="TOUAction" id="TOUAction"></form>							
+				</div>	
+			</div>
+		</div>
+	</div>
+
+
+	
+	<script src="./function.js"></script>
+
+ </body>
+ </html>

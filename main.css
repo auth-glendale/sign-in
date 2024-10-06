@@ -1,0 +1,153 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: #fff;
+    border-bottom: 3px solid #ffc629;
+    padding: 20px;
+}
+header img{
+    width: 200px;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+.content div{
+    text-align: center;
+}
+.content div h1{
+    color: #404e59;
+}
+footer{
+    font-size: 100%;
+    border-top: 4px solid #d5d5d5;
+    position: relative;
+    background: #f6f6f6;
+    z-index: 0;
+
+}
+footer::before{
+    content: "";
+    top: auto;
+    left: 0;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    width: 100%;
+    height: 60px;
+    background: #d3d3d3;
+    padding: 0 10px;
+    margin: 0 auto;
+    display: block;
+}
+footer .footercolumn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+}
+footer .footercolumn .con{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+}
+footer .footercolumn .con h2{
+    font-size: 14px;
+    color: #404e59;
+    margin-top: 0;
+    font-weight: bold;
+    margin-bottom: 11px;
+    letter-spacing: .5px;
+}
+footer .footercolumn .con a{
+    white-space: nowrap;
+    color: #4b5c69;
+    font-size: 15px;
+    display: block;
+    text-decoration: none;
+    margin-bottom: 1px;
+    -webkit-transition: all .2s ease-out;
+    -moz-transition: all .2s ease-out;
+    -o-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+    letter-spacing: .3px;
+}
+footer .footercolumn .footer_nav{
+    padding: 10px;
+}
+footer .footercolumn .footer_nav a{
+    text-decoration: none;
+    color: #000;
+}
+footer .flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social_icons{
+    margin: 17px 0;
+    display: inline-block;
+    float: left;
+    margin-left: -117px;
+}
+footer .social_icons li{
+    display: inline-block;
+    vertical-align: middle;
+}
+footer .footer_bottom .social_icons li a{
+    text-decoration: none;
+}
+footer .footer_links{
+    margin-top: 14px;
+    display: inline-block;
+    text-align: left;
+    float: right;
+    clear: none;
+}
+
+.footer_info{
+    margin: 19px 0 19px 7px;
+    display: inline-block;
+    text-align: left;
+    float: left;
+    clear: none;
+    font-size: 11px;
+}
+@media screen and (max-width:768px) {
+    footer{
+        text-align: center;
+    }
+    footer .footercolumn .con{
+        display: block;
+        text-align: center;
+    }
+    footer .flex{
+        display: block;
+    }
+    .social_icons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        float: none;
+    }
+    .social_icons li{
+        margin: 5px;
+    }
+    footer .footer_links{
+        display: block;
+        float: none;
+        text-align: center;
+    }
+    .footer_info{
+        float:none;
+        padding: 10px;
+        text-align: center;
+    }
+}
